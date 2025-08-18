@@ -1,6 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import Logo from '../images/Logo-Desktop.jpg';
+import Logo from '../images/Logo.svg';
 import '../styles/Header.css';
 
 const Header = () => {
@@ -8,8 +8,8 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="header-container">
-        <div className="header-logo">
+      <div className="header-container grid grid-cols-3 items-center w-100">
+        <div className="header-logo col-start-2 justify-self-center">
           <img
             src={Logo}
             alt="LST Advogados"
@@ -28,7 +28,7 @@ const Header = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="menu-button"
+          className="menu-button justify-self-end"
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
