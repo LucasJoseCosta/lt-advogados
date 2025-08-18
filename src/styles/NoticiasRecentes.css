@@ -1,0 +1,168 @@
+/* ======== DESKTOP PRIMEIRO ======== */
+.noticias-section {
+  padding: 64px 24px;
+  background-color: #f9fafb;
+}
+
+.noticias-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.noticias-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #173A36;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.noticias-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.noticias-image {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.image-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  color: white;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+}
+
+.news-headline {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.noticias-content {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.news-text {
+  color: #374151;
+  font-size: 16px;
+  line-height: 1.6;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.saiba-mais-button {
+  background-color: #B47A4F;
+  color: white;
+  padding: 8px 32px;
+  border-radius: 9999px;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.saiba-mais-button:hover {
+  background-color: #9d6441;
+  transform: translateY(-2px);
+}
+
+/* ======== RESPONSIVO ======== */
+@media (max-width: 767px) {
+  .noticias-section {
+    padding: 48px 16px;
+  }
+
+  .noticias-title {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+
+  .noticias-card {
+    grid-template-columns: 1fr;
+  }
+
+  .noticias-image {
+    min-height: 280px;
+  }
+
+  .news-headline {
+    font-size: 20px;
+  }
+
+  .noticias-content {
+    padding: 16px;
+  }
+
+  .news-text {
+    font-size: 14px;
+    max-height: 256px;
+  }
+
+  .saiba-mais-button {
+    font-size: 16px;
+    padding: 6px 24px;
+  }
+}
+.actions-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+.saiba-mais-button {
+  background-color: #B47A4F;
+  color: white;
+  padding: 3px 32px;
+  border-radius: 9999px;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.saiba-mais-button:hover {
+  background-color: #9d6441;
+  transform: translateY(-2px);
+}
+.actions-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.arrow-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.arrow-button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+  .actions-container {
+    gap: 12px;
+  }
+}

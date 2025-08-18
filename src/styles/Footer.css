@@ -1,0 +1,164 @@
+.footer {
+  background-color: #173A36;
+  color: white;
+  padding: 48px 24px;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 32px 16px;
+    border-radius: 32px 32px 0 0;
+  }
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .footer-container {
+    padding: 0 8px;
+  }
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 64px;
+}
+
+@media (max-width: 767px) {
+  .footer-content {
+    gap: 32px;
+  }
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.contact-phone {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.address {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.address p {
+  margin: 0;
+}
+
+.instagram-handle {
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 767px) {
+  .instagram-handle {
+    margin-bottom: 24px;
+  }
+}
+
+.copyright {
+  font-size: 14px;
+  color: #9ca3af;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .copyright {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+.social-media {
+  flex-shrink: 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  .social-icons {
+    gap: 16px;
+  }
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 767px) {
+  .social-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.social-icon:hover {
+  color: #B47A4F;
+}
+
+.whatsapp-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 767px) {
+  .whatsapp-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+.contact-number{
+    display: flex;
+    flex-direction: column;
+  } 
+}
+.whatsapp-icon:hover {
+  background-color: #16a34a;
+}
+
+.whatsapp-icon span {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+.contact-sociais{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+.contact-sociais{
+  display: flex;
+  justify-content: space-between;
+}
+}
