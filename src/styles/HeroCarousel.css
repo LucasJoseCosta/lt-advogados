@@ -3,6 +3,7 @@
   overflow: hidden;
 }
 
+/* MOBILE */
 .carousel-container {
   height: 400px;
   position: relative;
@@ -33,7 +34,6 @@
 
 .carousel-content {
   position: absolute;
-  inset: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -59,18 +59,32 @@
   transform: translateY(-2px);
 }
 
-/* Desktop*/
+/* DESKTOP */
 @media (min-width: 768px) {
+  .carousel-wrapper {
+    display: none;
+  }
+
   .carousel-container {
     height: 600px;
+    background-color: #195D55; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-left: 80px;
   }
-  .carousel-wrapper{
-    width: 100%;
-    height: auto;
-    position: initial;
-  }
+
   .cta-button {
-    font-size: 18px;
-    padding: 12px 48px;
+    background-color: #D2CDC7;
+    color: black;
+    font-size: 24px;
+    padding: 3px 58px;
+    margin-bottom: 32px;
+  }
+
+  .cta-button:hover {
+    background-color: white;
+    transform: translateY(-2px);
+    
   }
 }

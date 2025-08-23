@@ -8,30 +8,32 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="header-container grid grid-cols-3 items-center w-100">
-        <div className="header-logo col-start-2 justify-self-center">
-          <img
-            src={Logo}
-            alt="LST Advogados"
-            className="logo-image"
-          />
+      <div className="header-text">
+        <div className="header-container flex items-center justify-between w-full">
+          {/* Logo à esquerda */}
+          <div className="header-logo">
+            <img
+              src={Logo}
+              alt="LST Advogados"
+              className="logo-image"
+            />
+          </div>
+
+          {/* Navegação Desktop à direita */}
+          <nav className="desktop-nav">
+            <a href="#inicio" className="nav-link">Plano de Resolução</a>
+            <a href="#servicos" className="nav-link">Sobre Nós</a>
+            <a href="#noticias" className="nav-link">Áreas de Atuação</a>
+            <a href="#contato" className="nav-link">Contatos</a>
+          </nav>
+
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="menu-button"
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
-
-        {/* Desktop Navigation */}
-        <nav className="desktop-nav">
-          <a href="#inicio" className="nav-link">Plano de Resolução</a>
-          <a href="#servicos" className="nav-link">Sobre Nós</a>
-          <a href="#noticias" className="nav-link">Áreas de Atuação</a>
-          <a href="#contato" className="nav-link">Contatos</a>
-        </nav>
-
-        {/* Mobile Menu Button */}
-        <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="menu-button justify-self-end"
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
       </div>
 
       {/* Mobile Menu */}
