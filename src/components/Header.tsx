@@ -27,7 +27,6 @@ const Header = () => {
             <a href="#contato" className="nav-link">Contatos</a>
           </nav>
 
-          {/* Botão Mobile */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="menu-button"

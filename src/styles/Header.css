@@ -1,3 +1,4 @@
+
 .header {
   background-color: #173A36;
   color: white;
@@ -9,7 +10,7 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Logo left | Menu right */
+    justify-content: space-between;
   }
 
   .header-logo,
@@ -23,7 +24,6 @@
     object-fit: cover;
   }
 
-  /* Desktop Navigation */
   .desktop-nav {
     display: none;
     gap: 32px;
@@ -40,7 +40,6 @@
     }
   }
 
-  /* Mobile Menu Button */
   .menu-button {
     width: 32px;
     height: 32px;
@@ -53,7 +52,6 @@
     cursor: pointer;
   }
 
-  /* Mobile Menu */
   .mobile-menu {
     position: absolute;
     top: 100%;

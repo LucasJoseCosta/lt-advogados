@@ -78,12 +78,13 @@
     background-color: #D2CDC7;
     color: black;
     font-size: 24px;
-    padding: 4px 58px;
+    padding: 3px 58px;
     margin-bottom: 32px;
   }
 
   .cta-button:hover {
     background-color: white;
     transform: translateY(-2px);
+    
   }
 }
