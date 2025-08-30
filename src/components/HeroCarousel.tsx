@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import carrousel1 from '../images/carrousel1.jpg';
 import carrousel2 from '../images/carrousel2.jpg';
 import carrousel3 from '../images/carrousel3.jpg';
@@ -37,7 +37,7 @@ const HeroCarousel = () => {
         
         <div className="carousel-content">
           <button className="cta-button">
-            Fale conosco!
+            Fale conosco!!
           </button>
         </div>
       </div>
